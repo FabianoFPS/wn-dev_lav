@@ -1,0 +1,26 @@
+{
+  "name": "node-design-patterns",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "test:promise": "jest /examples/promise",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prettier:check": "prettier -c 'examples/**/*.js'",
+    "prettier:fix": "prettier --write 'examples/**/*.js'",
+    "ci": "npm run lint && npm run prettier:check && npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2"
+  }
+}
